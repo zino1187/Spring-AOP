@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Body">
 	<insert id="insert" parameterType="Body">
-		insert into body(body_id, member_id, height,weight,type)
+		insert into bod(body_id, member_id, height,weight,type)
 		values(seq_body.nextval, #{member.member_id},#{height},#{weight},#{type} )
 	</insert>
 </mapper>
